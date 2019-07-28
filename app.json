@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/skill/skill",
+    "pages/project/project",
+    "pages/job/job",
     "pages/index/index"
   ],
   "window": {
@@ -8,5 +11,22 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "i-tab-bar": "/iview-ui/tab-bar/index",
+    "i-tab-bar-item": "/iview-ui/tab-bar-item/index",
+    "i-card": "/iview-ui/card/index",
+    "i-input": "/iview-ui/input/index",
+    "wux-card": "/wux-ui/card/index",
+    "wux-wing-blank": "/wux-ui/wing-blank/index",
+    "wux-cell-group": "/wux-ui/cell-group/index",
+    "wux-cell": "/wux-ui/cell/index",
+    "wux-input": "/wux-ui/input/index",
+    "wux-textarea": "/wux-ui/textarea/index",
+    "wux-icon": "/wux-ui/icon/index",
+    "wux-badge": "/wux-ui/badge/index",
+    "wux-tabbar": "/wux-ui/tabbar/index",
+    "wux-tabbar-item": "/wux-ui/tabbar-item/index",
+    "wux-avatar": "/wux-ui/avatar/index"
+  }
 }

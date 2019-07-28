@@ -1,0 +1,8 @@
+<!--blue-components/ul/index.wxml-->
+
+<view wx:for="{{ data }}" class='list-container' wx:key="*this">
+  <!-- 左侧 -->
+  <view class='left-tag'>{{ index+1 }}.</view>
+  <!-- 右侧 -->
+  <view class='right-content'>{{ item.content }}</view>
+</view>

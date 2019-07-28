@@ -1,10 +1,23 @@
 /**app.wxss**/
+
 .container {
-  height: 100%;
+  /* height: 100%;  */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+.card-gap {
+  margin: 0rpx 16rpx 16rpx 16rpx;
+}
+
+.remove-disabled-css {
+  opacity: 1 !important;
+}
+
+.page {
+  margin-bottom: calc(50px + 15px);
+}

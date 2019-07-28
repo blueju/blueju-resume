@@ -1,0 +1,25 @@
+/* 标题 */
+.title{
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* 设置Card外边距 */
+.job{
+  margin: 0 15px 15px 15px;
+}
+
+/* 卡片背景颜色 */
+.job .wux-card__hd{
+  background-color: #f8f8f8;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+/* 防止因disabled而导致文本变淡 */
+.job .wux-input--disabled,
+.job .wux-textarea--disabled{
+  opacity: 1;
+}

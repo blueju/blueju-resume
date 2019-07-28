@@ -1,13 +1,72 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='page'>
+  <view class='my-avatar'>
+    <wux-avatar size="large" src="https://wux.cdn.cloverstd.com/logo.png" />
+    <text>蓝钜</text>
+    <text>前端开发工程师</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <!-- 教育背景 -->
+  <view class='education'>
+    <wux-card title="教育背景">
+      <view slot="body">
+        <wux-cell>
+          <wux-input label="时间" defaultValue="2015.9-2019.7" disabled/>
+        </wux-cell>
+        <wux-cell>
+          <wux-input label="学校" defaultValue="广东财经大学" disabled/>
+        </wux-cell>
+        <wux-cell>
+          <wux-input label="专业" defaultValue="信息管理与信息系统" disabled/>
+        </wux-cell>
+      </view>
+    </wux-card>
   </view>
+
+  <!-- 其他 -->
+  <view class='other'>
+    <wux-card title="其他">
+      <view slot="body">
+        <wux-cell>
+          <wux-input label="Blog" defaultValue="http://blog.blueju.cn" disabled/>
+        </wux-cell>
+        <wux-cell>
+          <wux-input label="Github" defaultValue="https://github.com/blueju" disabled/>
+        </wux-cell>
+        <wux-cell>
+          <wux-input label="Email" defaultValue="blueju@foxmail.com" disabled/>
+        </wux-cell>
+        <wux-cell>
+          <wux-input label="Phone" defaultValue="180-2744-9937" disabled/>
+        </wux-cell>
+      </view>
+    </wux-card>
+  </view>
+</view>
+
+<!-- 底部导航栏 -->
+<view class='blue-tabbar'>
+  <i-tab-bar current="{{ current }}" color="#f759ab" bindchange="clickTabBar" fixed="true">
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="job" icon="group" current-icon="group_fill" title="工作经历"></i-tab-bar-item>
+    <i-tab-bar-item key="project" icon="remind" current-icon="remind_fill" title="项目实践"></i-tab-bar-item>
+    <i-tab-bar-item key="skill" icon="mine" current-icon="mine_fill" title="专业技能"></i-tab-bar-item>
+  </i-tab-bar>
+  <!-- <wux-tabbar controlled="true" current="{{ current }}" position="bottom" bind:change="clickTabBar">
+      <wux-tabbar-item key="index" title="首页">
+        <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-on" />
+        <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-off" />
+      </wux-tabbar-item>
+      <wux-tabbar-item key="job" title="工作经历">
+        <wux-icon wux-class="icon" type="ios-people" size="20" slot="icon-on" />
+        <wux-icon wux-class="icon" type="ios-people" size="20" slot="icon-off" />
+      </wux-tabbar-item>
+      <wux-tabbar-item key="project" title="项目实践">
+        <wux-icon wux-class="icon" type="logo-javascript" size="20" slot="icon-on" />
+        <wux-icon wux-class="icon" type="logo-javascript" size="20" slot="icon-off" />
+      </wux-tabbar-item>
+      <wux-tabbar-item key="skill" title="专业技能">
+        <wux-icon wux-class="icon" type="ios-construct" size="20" slot="icon-on" />
+        <wux-icon wux-class="icon" type="ios-construct" size="20" slot="icon-off" />
+      </wux-tabbar-item>
+    </wux-tabbar> -->
 </view>

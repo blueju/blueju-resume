@@ -1,0 +1,55 @@
+<view class='page'>
+  <!-- 标题 -->
+  <text class='title'>项目实践</text>
+
+  <!-- 项目实践 -->
+  <view class='project' wx:for="{{ projectInfo }}">
+    <wux-card title="{{ item.name }}">
+      <view slot="body">
+        <wux-cell>
+          <wux-textarea label="使用技术" autoHeight="true" defaultValue='{{ item.tech }}' disabled/>
+        </wux-cell>
+        <wux-cell>
+          <wux-input label="展示链接" defaultValue='{{ item.url }}' disabled/>
+        </wux-cell>
+        <wux-cell>
+          <text class='project-label'>项目简述</text>
+          <wux-textarea maxlength="-1" autoHeight="true" defaultValue="{{ item.simpleDesc }}" disabled/>
+        </wux-cell>
+        <wux-cell>
+          <text class='project-label'>项目内容</text>
+          <blue-ul data="{{ item.content }}"></blue-ul>
+        </wux-cell>
+      </view>
+    </wux-card>
+  </view>
+</view>
+
+
+<!-- 底部导航栏 -->
+<view class='blue-tabbar'>
+  <i-tab-bar current="{{ current }}" color="#f759ab" bindchange="clickTabBar" fixed="true">
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="job" icon="group" current-icon="group_fill" title="工作经历"></i-tab-bar-item>
+    <i-tab-bar-item key="project" icon="remind" current-icon="remind_fill" title="项目实践"></i-tab-bar-item>
+    <i-tab-bar-item key="skill" icon="mine" current-icon="mine_fill" title="专业技能"></i-tab-bar-item>
+  </i-tab-bar>
+  <!-- <wux-tabbar controlled="true" current="{{ current }}" position="bottom" bind:change="clickTabBar">
+    <wux-tabbar-item key="index" title="首页">
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-on" />
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-off" />
+    </wux-tabbar-item>
+    <wux-tabbar-item key="job" title="工作经历">
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-on" />
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-off" />
+    </wux-tabbar-item>
+    <wux-tabbar-item key="project" title="项目实践">
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-on" />
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-off" />
+    </wux-tabbar-item>
+    <wux-tabbar-item key="skill" title="专业技能">
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-on" />
+      <wux-icon wux-class="icon" type="ios-home" size="20" slot="icon-off" />
+    </wux-tabbar-item>
+  </wux-tabbar> -->
+</view>

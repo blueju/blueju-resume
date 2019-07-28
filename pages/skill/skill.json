@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "blue-ul": "/blue-components/ul/index"
+  }
+}

@@ -1,21 +1,21 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* 给Card添加外边距，避免粘在一起 */
+.education, .other {
+  margin: 0 15px 15px 15px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/* 防止因disabled而导致文本变淡 */
+.education .wux-input--disabled, .other .wux-input--disabled {
+  opacity: 1 !important;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+/* 头像居中 */
+.my-avatar {
+  text-align: center;
 }
 
-.usermotto {
-  margin-top: 200px;
+/* 给姓名、岗位设置居中及外边距 */
+.my-avatar text {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

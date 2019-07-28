@@ -1,0 +1,27 @@
+/* 标题 */
+
+.title {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* 设置Card外边距 */
+
+.skill {
+  margin: 0 15px 15px 15px;
+}
+
+/* 卡片背景颜色 */
+
+.skill .wux-card__hd {
+  background-color: #f8f8f8;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.skill .wux-cell {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
