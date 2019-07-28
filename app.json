@@ -15,8 +15,7 @@
   "usingComponents": {
     "i-tab-bar": "/iview-ui/tab-bar/index",
     "i-tab-bar-item": "/iview-ui/tab-bar-item/index",
-    "i-card": "/iview-ui/card/index",
-    "i-input": "/iview-ui/input/index",
+    
     "wux-card": "/wux-ui/card/index",
     "wux-wing-blank": "/wux-ui/wing-blank/index",
     "wux-cell-group": "/wux-ui/cell-group/index",
