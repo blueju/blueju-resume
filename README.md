@@ -1,6 +1,22 @@
-Keyword:
-1. resume
-2. web
-3. vue
-4. nuxt
-5. ssr
+# blueju-resume
+
+> blueju-resume
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

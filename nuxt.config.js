@@ -1,62 +1,62 @@
-export default {
-  /*
-  ** Rendering mode
-  ** Doc: https://nuxtjs.org/api/configuration-mode
-  */
-  mode: 'universal',
 
+export default {
+  mode: 'universal',
   /*
   ** Headers of the page
-  ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
   */
   head: {
-    title: 'Nuxt.js starter for CSB',
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Official Nuxt.js starter for CodeSandBox' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
-
+  /*
+  ** Customize the progress-bar color
+  */
+  loading: { color: '#fff' },
   /*
   ** Global CSS
-  ** Doc: https://nuxtjs.org/api/configuration-css
   */
-  css: [],
-
+  css: [
+  ],
   /*
   ** Plugins to load before mounting the App
-  ** Doc: https://nuxtjs.org/guide/plugins
   */
-  plugins: [],
-
+  plugins: [
+  ],
+  /*
+  ** Nuxt.js dev-modules
+  */
+  devModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module'
+  ],
   /*
   ** Nuxt.js modules
-  ** Doc: https://nuxtjs.org/guide/modules
   */
   modules: [
-    // Doc: https://http.nuxtjs.org
-    '@nuxt/http',
-    // TODO: Remove it if you want to eject from codeSandbox
-    './codesandbox'
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios'
   ],
-
   /*
-  ** HTTP module configuration
+  ** Axios module configuration
+  ** See https://axios.nuxtjs.org/options
   */
-  http: {
-    // See https://http.nuxtjs.org/api/#options
+  axios: {
   },
-
   /*
   ** Build configuration
-  ** Doc: https://nuxtjs.org/api/configuration-build
   */
   build: {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {}
+    extend (config, ctx) {
+    }
   }
-};
+}

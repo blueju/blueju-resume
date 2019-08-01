@@ -1,19 +1,26 @@
 {
-  "name": "codesandbox-nuxt",
+  "name": "blueju-resume",
   "version": "1.0.0",
-  "description": "Nuxt starter for CodeSandBox",
-  "author": "Nuxt.js Team",
+  "description": "blueju-resume",
+  "author": "blueju",
   "private": true,
   "scripts": {
-    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "post-update": "yarn upgrade --latest"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/http": "^0.3.0",
-    "nuxt": "^2.5.1",
-    "reqlim": "^0.0.0"
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^0.2.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "nodemon": "^1.18.9"
   }
 }
