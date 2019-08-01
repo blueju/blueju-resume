@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/skill/skill",
     "pages/project/project",
+    "pages/skill/skill",
     "pages/job/job",
     "pages/index/index"
   ],

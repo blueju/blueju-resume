@@ -16,7 +16,8 @@
           <wux-input label="岗位" defaultValue='{{ item.job }}' disabled/>
         </wux-cell>
         <wux-cell>
-          <wux-textarea maxlength="-1" autoHeight="true" defaultValue="{{ item.description }}" disabled/>
+          <!-- <wux-textarea maxlength="-1" autoHeight="true" defaultValue="{{ item.description }}" disabled/> -->
+          <view>{{ item.description }}</view>
         </wux-cell>
       </view>
     </wux-card>

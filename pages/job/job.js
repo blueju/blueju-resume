@@ -28,14 +28,31 @@ Page({
    */
   // 点击导航栏
   clickTabBar: function(e) {
-    app.clickTabBar(this.data.current,e)
+    app.clickTabBar(this.data.current, e)
+  },
+  // 获取“工作经历”数据
+  getJobData: function() {
+    // wx.cloud.init()
+    // const db = wx.cloud.database({
+    //   env: 'blueju-resume-f9x51'
+    // });
+    // console.log(db.collection('resume').doc('job'))
+    // db.collection('resume').doc('job').get({
+    //   success: function(res) {
+    //     // res.data 包含该记录的数据
+    //     console.log(res.data)
+    //   },
+    //   fail:function(err){
+    //     console.log(err)
+    //   }
+    // })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.getJobData()
   },
 
   /**

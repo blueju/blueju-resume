@@ -1,5 +1,6 @@
 /* 标题 */
-.title{
+
+.title {
   display: block;
   text-align: center;
   margin-top: 15px;
@@ -7,25 +8,28 @@
 }
 
 /* 设置Card外边距 */
-.project{
+
+.project {
   margin: 0 15px 15px 15px;
 }
 
 /* 卡片背景颜色 */
-.project .wux-card__hd{
+
+.project .wux-card__hd {
   background-color: #f8f8f8;
   border-top-left-radius: 10rpx;
   border-top-right-radius: 10rpx;
 }
 
 /* 防止因disabled而导致文本变淡 */
-.project .wux-input--disabled,
-.project .wux-textarea--disabled{
+
+.project .wux-input--disabled, .project .wux-textarea--disabled {
   opacity: 1;
 }
 
 /* 小标题（项目简述+项目内容） */
-.project-label{
+
+.project-label {
   display: block;
   margin-bottom: 5px;
 }
@@ -33,4 +37,25 @@
 .project .wux-cell {
   padding-left: 10rpx;
   padding-right: 10rpx;
+}
+
+.used-tech {
+  display: flex;
+  flex-direction: row;
+}
+
+.used-tech label {
+  display: inline-flex;
+  flex: 0 1 auto;
+  margin-left: 0;
+  margin-right: 10rpx;
+  /* text-align: left; */
+  /* white-space: nowrap; */
+  width: 320rpx;
+}
+
+.used-tech view {
+  display: inline-flex;
+  /* flex: 0 1 auto; */
+  /* display: block; *//* white-space: ; */
 }

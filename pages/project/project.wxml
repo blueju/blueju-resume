@@ -7,14 +7,15 @@
     <wux-card title="{{ item.name }}">
       <view slot="body">
         <wux-cell>
-          <wux-textarea label="使用技术" autoHeight="true" defaultValue='{{ item.tech }}' disabled/>
+          <wux-textarea label="使用技术" rows="2" defaultValue='{{ item.tech }}' disabled/>
         </wux-cell>
         <wux-cell>
           <wux-input label="展示链接" defaultValue='{{ item.url }}' disabled/>
         </wux-cell>
         <wux-cell>
           <text class='project-label'>项目简述</text>
-          <wux-textarea maxlength="-1" autoHeight="true" defaultValue="{{ item.simpleDesc }}" disabled/>
+          <!-- <wux-textarea maxlength="-1" autoHeight="true" defaultValue="{{ item.simpleDesc }}" disabled/> -->
+          <view>{{ item.simpleDesc }}</view>
         </wux-cell>
         <wux-cell>
           <text class='project-label'>项目内容</text>
