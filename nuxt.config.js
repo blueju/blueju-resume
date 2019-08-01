@@ -58,5 +58,12 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  /**
+   * 路由
+   * Router
+   */
+  router: {
+    middleware: ['device']
   }
 }
