@@ -1,2 +1,6 @@
-# Dependency directories
-node_modules/
+# 依赖包
+node_modules
+
+# 编译生成
+.nuxt
+.dist
