@@ -6,23 +6,18 @@
         blueju-resume
       </h1>
       <h2 class="subtitle">
-        blueju-resume
+        Welcome to the iView + Nuxt.js template
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <Button type="primary" target="_blank" to="https://nuxtjs.org/">
           Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
+        </Button>
+        <Button target="_blank" to="https://github.com/nuxt/nuxt.js">
           GitHub
-        </a>
+        </Button>
+        <Button target="_blank" to="https://www.iviewui.com/">
+          iView
+        </Button>
       </div>
     </div>
   </div>
@@ -30,7 +25,6 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-
 export default {
   components: {
     Logo
@@ -47,7 +41,6 @@ export default {
   align-items: center;
   text-align: center;
 }
-
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -57,7 +50,6 @@ export default {
   color: #35495e;
   letter-spacing: 1px;
 }
-
 .subtitle {
   font-weight: 300;
   font-size: 42px;
@@ -65,7 +57,6 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-
 .links {
   padding-top: 15px;
 }
