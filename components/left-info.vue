@@ -8,15 +8,15 @@
             <img
               class="head-img"
               src="https://admin.heyui.top/static/images/src/images/avatar.8a80923.png"
-            >
+            />
             <h1>{{ personInfo.name }}</h1>
             <h3 class="job">{{ personInfo.job }}</h3>
           </section>
 
           <!-- 个人信息 -->
           <section class="other-info">
-            <p v-for="item in personInfo.otherInfo" class="each-item">
-              <Icon :type="item.icon"/>
+            <p v-for="(item,index) in personInfo.otherInfo" :key="index" class="each-item">
+              <Icon :type="item.icon" />
               <span>{{ item.value }}</span>
             </p>
           </section>
@@ -27,18 +27,14 @@
 </template>
 
 <script>
+import { personInfo } from "../resume-config";
+
 export default {
-  // 组件名称
   name: "left-info",
-  // 接收父组件传入参数
-  props: {
-    personInfo: {
-      type: Object
-    }
-  },
-  computed: {},
   data() {
-    return {};
+    return {
+      personInfo
+    };
   },
   methods: {}
 };
@@ -49,7 +45,7 @@ export default {
   display: none;
 }
 
-.left-info{
+.left-info {
   margin-top: 40px;
 }
 

@@ -3,12 +3,12 @@
     <Row>
       <!-- 左侧信息 -->
       <Col span="6">
-        <LeftInfo :personInfo="personInfo"/>
+        <LeftInfo />
       </Col>
 
       <!-- 右侧信息 -->
       <Col span="18">
-        <RightInfo/>
+        <RightInfo />
       </Col>
     </Row>
   </div>
@@ -28,30 +28,7 @@ export default {
     RightInfo
   },
   data() {
-    return {
-      personInfo: {
-        name: "蓝钜",
-        job: "前端开发岗",
-        otherInfo: {
-          school: {
-            value: "广东财经大学",
-            icon: "ios-school"
-          },
-          major: {
-            value: "信息管理与信息系统",
-            icon: "ios-navigate"
-          },
-          email: {
-            value: "blueju@foxmail.com",
-            icon: "md-mail"
-          },
-          phone: {
-            value: "180-2744-9937",
-            icon: "ios-call"
-          }
-        }
-      }
-    };
+    return {};
   }
   // asyncData(context) {
   //   axios.get('')
@@ -60,7 +37,7 @@ export default {
 </script>
 
 <style>
-html{
+html {
   height: 100%;
 }
 
