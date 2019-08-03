@@ -1,9 +1,7 @@
 <template>
   <!-- 教育背景 -->
   <Card id="education-card">
-    <p slot="title">
-      <Icon type="ios-film-outline"></Icon>教育背景
-    </p>
+    <p slot="title" class="card-title">教育背景</p>
     <article class="education-info">
       <span v-for="(item,index) in educationInfo" :key="index">{{ item }}</span>
     </article>
@@ -22,12 +20,20 @@ export default {
 };
 </script>
 
-<style scoped>
-.education-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+<style lang="less" scoped>
+#education-card {
+  font-size: 1rem;
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .education-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 </style>
 

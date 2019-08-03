@@ -11,11 +11,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "iview": "^3.1.5",
     "@nuxtjs/axios": "^5.3.6",
+    "iview": "^3.1.5",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
     "nodemon": "^1.18.9"
   }
 }

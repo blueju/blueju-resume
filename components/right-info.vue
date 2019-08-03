@@ -3,13 +3,13 @@
     <Row>
       <Col span="23">
         <!-- 教育背景 -->
-        <Education />
+        <Education id="education-card"/>
 
         <!-- 工作经历 -->
-        <Career />
+        <Career id="career-card"/>
 
         <!-- 项目实践 -->
-        <Project />
+        <Project id="project-card"/>
       </Col>
     </Row>
   </div>
@@ -31,11 +31,15 @@ export default {
 </script>
 
 <style>
-/* #education-card,
+.right-info{
+  margin-top: 40px;
+}
+
+#education-card,
 #career-card,
 #project-card {
   margin-bottom: 15px;
-} */
+}
 </style>
 
 

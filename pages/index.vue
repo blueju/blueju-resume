@@ -3,12 +3,12 @@
     <Row>
       <!-- 左侧信息 -->
       <Col span="6">
-        <LeftInfo />
+        <LeftInfo/>
       </Col>
 
       <!-- 右侧信息 -->
       <Col span="18">
-        <RightInfo />
+        <RightInfo/>
       </Col>
     </Row>
   </div>
@@ -37,12 +37,13 @@ export default {
 </script>
 
 <style>
-html {
-  height: 100%;
+body {
+  font-size: 62.5%;
 }
 
 .container {
   background-color: #f3f6f8;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 30px;
 }
 </style>
