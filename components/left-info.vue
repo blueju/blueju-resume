@@ -13,7 +13,8 @@
         <section class="other-info">
           <p v-for="(item,index) in personInfo.otherInfo" :key="index">
             <Icon :type="item.icon"/>
-            <span>{{ item.value }}</span>
+            <a v-if="isUrl(item.value)" :href="item.value" target="_blank">{{ item.value }}</a>
+            <span v-else>{{ item.value }}</span>
           </p>
         </section>
       </Card>
@@ -43,13 +44,20 @@ export default {
         let pageScrollTop = document.documentElement.scrollTop;
         // 页面的滚动距离 > Card的距顶距离，改变Card定位方式
         if (leftInfoCardOffsetTop < pageScrollTop) {
-          document.getElementsByClassName("left-info-card")[0].style.position = "fixed";
+          document.getElementsByClassName("left-info-card")[0].style.position =
+            "fixed";
           document.getElementsByClassName("left-info-card")[0].style.width =
             document.documentElement.clientWidth / 4.8 + "px";
         } else {
-          document.getElementsByClassName("left-info-card")[0].style.position = "relative";
+          document.getElementsByClassName("left-info-card")[0].style.position =
+            "relative";
         }
       });
+    },
+
+    // 是否是URL链接
+    isUrl(value) {
+      return value.includes("http") ? true : false;
     }
   },
   mounted() {
@@ -88,7 +96,8 @@ export default {
       p {
         font-size: 1rem;
         padding: 5px 0;
-        span {
+        span,
+        a {
           margin-left: 5px;
         }
       }
