@@ -65,5 +65,11 @@ export default {
    */
   router: {
     middleware: ['device']
+  },
+  config: {
+    nuxt: {
+      "host": "0.0.0.0",
+      "port": "3000"
+    }
   }
 }
