@@ -13,7 +13,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "iview": "^3.1.5",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.8.1"
   },
   "devDependencies": {
     "babel-plugin-import": "^1.12.0",
