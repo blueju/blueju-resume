@@ -53,6 +53,17 @@ export default {
   ** Build configuration
   */
   build: {
+    babel: {
+      // "plugins": [
+      // [
+      // "import",
+      // {
+      //   "libraryName": "iview",
+      //   "libraryDirectory": "src/components"
+      // }
+      // ]
+      // ]
+    },
     /*
     ** You can extend webpack config here
     */
