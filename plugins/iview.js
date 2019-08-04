@@ -3,7 +3,6 @@ import Vue from 'vue'
 // 全量引入
 // import iView from 'iview'
 // Vue.use(iView)
-// import 'iview/dist/styles/iview.css';
 
 // 按需引入
 import {
@@ -24,7 +23,6 @@ Vue.component('Icon', Icon);
 // Vue.use(Col)
 // Vue.use(Card)
 // Vue.use(Icon)
-import 'iview/dist/styles/iview.css';
 
 // 这个我也不知道是啥，可能是国际化
 // import locale from 'iview/dist/locale/en-US' // Change locale, check node_modules/iview/dist/locale
